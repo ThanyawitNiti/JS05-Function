@@ -3,7 +3,7 @@
 ```js
 function sayHi(name) {
   let name = "Guest";
-  console.log(name); // *
+  console.log(name); // * ชื่อตัวแปรซ้ำ รับname เข้ามา และประกาศตัวแปร name ซ่ำ
 }
 
 sayHi("Jim");
