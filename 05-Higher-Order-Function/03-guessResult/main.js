@@ -1,3 +1,18 @@
+// ผลลัพธ์ในบรรทัดที่มี * มีค่าเป็นอะไรและเพราะอะไร
+
+
+function makeWorker() {
+  let name = 'Pete';
+  return function () {
+    alert(name);
+  };
+}
+let name = 'John';
+let work = makeWorker();
+work(); // *
+
+
+
 function multiply(num1, num2, callback) {
     let result = num1 * num2;
     callback(result);

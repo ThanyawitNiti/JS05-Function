@@ -8,6 +8,6 @@
 //lose : 5 : 0 point => 5*0
 // total point : 89
 // input ที่จำเป็น win draw 
-// อะไรที่ไม่จำเป็น ซ่อนไว้ , esay interact 
+
 
 const point = (win,draw) => win *3 + draw ; 
