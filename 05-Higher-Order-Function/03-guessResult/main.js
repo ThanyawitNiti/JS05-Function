@@ -1,13 +1,28 @@
+// ผลลัพธ์ในบรรทัดที่มี * มีค่าเป็นอะไรและเพราะอะไร
+
+
+function makeWorker() {
+  let name = 'Pete';
+  return function () {
+    alert(name);
+  };
+}
+let name = 'John';
+let work = makeWorker();
+work(); // * aleart('Pete')
+
+
+
 function multiply(num1, num2, callback) {
-    let result = num1 * num2;
-    callback(result);
+    let result = num1 * num2; // 50 = 5 *10
+    callback(result); //this is : 50
 }
 
 function displayResult(result) {
-    console.log('The result is: ' + result);
+    console.log('The result is: ' + result); // this is : 50
 }
 
-multiply(5, 10, displayResult);
+multiply(5, 10, displayResult); //* The result is: 50
 
 function outerFunction() {
     let outerVariable = 'Hello';
